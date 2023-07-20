@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".Songlv">
 
+    <Button
+        android:id="@+id/btnSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSongs" />
+
     <ListView
         android:id="@+id/lv"
         android:layout_width="match_parent"

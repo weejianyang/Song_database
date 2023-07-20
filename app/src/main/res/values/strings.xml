@@ -14,4 +14,12 @@
     <string name="rb5">5</string>
     <string name="btn1">Insert</string>
     <string name="btn2">Show List</string>
+    <string name="btnSongs">SHOW ALL SONGS WITH 5 STARS</string>
+    <string name="tvid">Song ID</string>
+    <string name="etid"></string>
+    <string name="tvtitle">Song Title</string>
+    <string name="ettitle"></string>
+    <string name="tvsinger">Singers</string>
+    <string name="tvYear">Year</string>
+
 </resources>

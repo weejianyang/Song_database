@@ -25,7 +25,7 @@ public class Song {
 
     public int getYear() { return year;}
 
-    public int getStars() { return stars;}
+    public int getStar() { return stars;}
 
     @NonNull
     @Override

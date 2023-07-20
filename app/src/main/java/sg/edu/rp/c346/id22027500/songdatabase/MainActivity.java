@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText etTitle;
@@ -37,10 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
                 int checkedRadioId = rgStar.getCheckedRadioButtonId();
 
-                //get checked radio button id and store in variable radioButton
+                //link get all radio button id and store in variable radioButton
                 RadioButton radioButton = rgStar.findViewById(checkedRadioId);
                 int star = Integer.parseInt(radioButton.getText().toString());
 
+                Toast.makeText(MainActivity.this, "Song added", Toast.LENGTH_SHORT).show();
                 db.insertSong(etTitle.getText().toString(), etSinger.getText().toString(), Integer.parseInt(etYear.getText().toString()), star);
             }
         });
@@ -53,5 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }
